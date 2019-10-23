@@ -1,5 +1,6 @@
 import argparse
 from contextlib import redirect_stdout
+import glob
 import io
 import json
 import logging
@@ -33,7 +34,7 @@ def _generate_stats(known_args, pipeline_args):
         _download_tfdv_wheel(extra_packages_dir)
 
         pipeline_options = PipelineOptions(pipeline_args)
-        pipeline_options.view_as(SetupOptions).extra_packages = os.listdir(extra_packages_dir)
+        pipeline_options.view_as(SetupOptions).extra_packages = glob.glob(os.path.join(extra_packages_dir, '*'))
         pipeline_options.view_as(SetupOptions).save_main_session = True
 
         stats_output_path = os.path.join(known_args.output_dir, 'stats.tfrecord')
