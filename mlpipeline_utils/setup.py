@@ -3,7 +3,9 @@ from setuptools import setup
 
 
 _REQUIRED_PACKAGES=[
-    'tensorflow-transform==0.14.0'
+    'tensorflow-transform==0.14.0',
+    'tensorflow-data-validation==0.14.1',
+    'tensorflow-model-analysis==0.14.0'
 ]
 
 

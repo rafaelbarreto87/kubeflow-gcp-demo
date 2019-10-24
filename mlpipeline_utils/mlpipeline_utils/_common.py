@@ -1,9 +1,22 @@
+import atexit
 import importlib
+import shutil
 import tempfile
 import uuid
 
+from apache_beam.options.pipeline_options import GoogleCloudOptions
+from apache_beam.options.pipeline_options import StandardOptions
 from tensorflow.python.lib.io import file_io
 from tensorflow_metadata.proto.v0 import schema_pb2
+
+
+def get_beam_temp_dir(pipeline_options):
+    if pipeline_options.view_as(StandardOptions).runner == 'DataflowRunner':
+        temp_dir = pipeline_options.view_as(GoogleCloudOptions).temp_location
+    else:
+        temp_dir = tempfile.mkdtemp()
+        atexit.register(lambda: shutil.rmtree(temp_dir))
+    return temp_dir
 
 
 def load_module_from_file_path(module_name_prefix, module_file_path):
