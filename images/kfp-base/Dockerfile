@@ -9,4 +9,5 @@ RUN pip install --upgrade --no-cache-dir \
         tensorflow-data-validation==0.14.1 \
         tensorflow-transform==0.14.0 \
         tensorflow-model-analysis==0.14.0 \
+        papermill[gcs]==1.2.1 \
         kfp==0.1.32
