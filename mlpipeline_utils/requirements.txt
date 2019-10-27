@@ -6,3 +6,4 @@ tensorflow-data-validation==0.14.1
 tensorflow-transform==0.14.0
 tensorflow-model-analysis==0.14.0
 kfp==0.1.32
+papermill[gcs]==1.2.1

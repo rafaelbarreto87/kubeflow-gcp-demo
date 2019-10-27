@@ -191,3 +191,26 @@ def tf_estimator_trainer_comp(
             'mlpipeline-metrics': '/tmp/mlpipeline-metrics.json'
         }
     )
+
+
+@kfp.dsl.component
+def papermill_comp(
+    notebook_path: str,
+    output_notebook_path: str,
+    papermill_base_image: str,
+    papermill_options: str='',
+    name='papermill',
+):
+    return kfp.dsl.ContainerOp(
+        name=name,
+        image=papermill_base_image,
+        command=['bash', '-cx'],
+        arguments=[' '.join([
+            'papermill',
+            '--no-progress-bar',
+            '--log-output',
+            str(papermill_options),
+            str(notebook_path),
+            str(output_notebook_path)
+        ])],
+    )
