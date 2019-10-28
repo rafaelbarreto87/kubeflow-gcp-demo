@@ -4,9 +4,9 @@ RUN pip install --upgrade --no-cache-dir pip
 RUN pip install --upgrade --no-cache-dir setuptools
 RUN pip install --upgrade --no-cache-dir \
         apache-beam[gcp]==2.16.0 \
+        google-cloud-bigquery==1.17.1 \
         google-cloud-core==1.0.3 \
         google-cloud-storage==1.20.0 \
-        google-cloud-bigquery==1.17.1 \
         kfp==0.1.32 \
         papermill[gcs]==1.2.1 \
         six==1.12.0 \
