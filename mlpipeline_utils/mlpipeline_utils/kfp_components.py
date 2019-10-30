@@ -194,12 +194,12 @@ def tf_estimator_trainer_comp(
 
 
 @kfp.dsl.component
-def papermill_comp(
+def run_notebook_comp(
     notebook_path: str,
     output_notebook_path: str,
     papermill_base_image: str,
     papermill_options: str='',
-    name='papermill',
+    name='run_notebook',
 ):
     return kfp.dsl.ContainerOp(
         name=name,
