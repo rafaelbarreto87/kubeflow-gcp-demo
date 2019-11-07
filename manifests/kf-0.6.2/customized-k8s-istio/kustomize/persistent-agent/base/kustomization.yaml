@@ -9,5 +9,5 @@ resources:
 - deployment.yaml
 - service-account.yaml
 images:
-- name: gcr.io/ml-pipeline/persistenceagent
+- name: gcr.io/kubeflow-demo-256908/3rdparty/ml-pipeline/persistenceagent
   newTag: '0.1.23'

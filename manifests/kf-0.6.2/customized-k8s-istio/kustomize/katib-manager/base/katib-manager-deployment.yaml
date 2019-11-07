@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: katib-manager
-        image: gcr.io/kubeflow-images-public/katib/v1alpha2/katib-manager:v0.1.2-alpha-289-g14dad8b
+        image: gcr.io/kubeflow-demo-256908/3rdparty/kubeflow-images-public/katib/v1alpha2/katib-manager:v0.1.2-alpha-289-g14dad8b
         imagePullPolicy: IfNotPresent
         env:
           - name: MYSQL_ROOT_PASSWORD

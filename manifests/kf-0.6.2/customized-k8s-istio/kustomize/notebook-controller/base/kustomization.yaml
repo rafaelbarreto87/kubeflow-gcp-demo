@@ -13,8 +13,8 @@ commonLabels:
   app: notebook-controller
   kustomize.component: notebook-controller
 images:
-  - name: gcr.io/kubeflow-images-public/notebook-controller
-    newName: gcr.io/kubeflow-images-public/notebook-controller
+  - name: gcr.io/kubeflow-demo-256908/3rdparty/kubeflow-images-public/notebook-controller
+    newName: gcr.io/kubeflow-demo-256908/3rdparty/kubeflow-images-public/notebook-controller
     newTag: v20190603-v0-175-geeca4530-e3b0c4
 configMapGenerator:
 - name: parameters

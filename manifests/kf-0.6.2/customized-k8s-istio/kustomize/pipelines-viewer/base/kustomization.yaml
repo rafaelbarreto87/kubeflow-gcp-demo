@@ -11,5 +11,5 @@ resources:
 - deployment.yaml
 - service-account.yaml
 images:
-- name: gcr.io/ml-pipeline/viewer-crd-controller
+- name: gcr.io/kubeflow-demo-256908/3rdparty/ml-pipeline/viewer-crd-controller
   newTag: '0.1.23'

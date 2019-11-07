@@ -15,7 +15,7 @@ spec:
         app: metadata-ui
     spec:
       containers:
-      - image: gcr.io/kubeflow-images-public/metadata-frontend:v0.1.8
+      - image: gcr.io/kubeflow-demo-256908/3rdparty/kubeflow-images-public/metadata-frontend:v0.1.8
         imagePullPolicy: IfNotPresent
         name: metadata-ui
         ports:

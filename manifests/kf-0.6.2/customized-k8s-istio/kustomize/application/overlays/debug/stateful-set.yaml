@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: manager
-        image: gcr.io/$(project)/application-controller:latest
+        image: gcr.io/kubeflow-demo-256908/3rdparty/$(project)/application-controller:latest
         command: 
         - /go/bin/dlv
         args: 

@@ -15,8 +15,8 @@ commonLabels:
   app: jupyter-web-app
   kustomize.component: jupyter-web-app
 images:
-  - name: gcr.io/kubeflow-images-public/jupyter-web-app
-    newName: gcr.io/kubeflow-images-public/jupyter-web-app
+  - name: gcr.io/kubeflow-demo-256908/3rdparty/kubeflow-images-public/jupyter-web-app
+    newName: gcr.io/kubeflow-demo-256908/3rdparty/kubeflow-images-public/jupyter-web-app
     newTag: 9419d4d
 configMapGenerator:
 - name: parameters

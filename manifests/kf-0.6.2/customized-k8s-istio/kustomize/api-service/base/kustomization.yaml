@@ -9,5 +9,5 @@ resources:
 - service-account.yaml
 - service.yaml
 images:
-- name: gcr.io/ml-pipeline/api-server
+- name: gcr.io/kubeflow-demo-256908/3rdparty/ml-pipeline/api-server
   newTag: '0.1.23'

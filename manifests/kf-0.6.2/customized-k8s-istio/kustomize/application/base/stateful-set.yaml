@@ -10,7 +10,7 @@ spec:
       - name: manager
         command:
         - /root/manager
-        image: gcr.io/kubeflow-images-public/kubernetes-sigs/application
+        image: gcr.io/kubeflow-demo-256908/3rdparty/kubeflow-images-public/kubernetes-sigs/application
         imagePullPolicy: Always
         env:
         - name: project

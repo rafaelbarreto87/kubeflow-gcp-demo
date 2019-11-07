@@ -14,5 +14,5 @@ data:
         spec:
           containers:
           - name: {{.Trial}}
-            image: alpine
+            image: gcr.io/kubeflow-demo-256908/3rdparty/alpine
           restartPolicy: Never

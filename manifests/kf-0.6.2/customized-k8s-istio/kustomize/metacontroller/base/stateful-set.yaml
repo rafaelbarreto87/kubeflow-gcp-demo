@@ -21,7 +21,7 @@ spec:
         - --logtostderr
         - -v=4
         - --discovery-interval=20s
-        image: metacontroller/metacontroller:v0.3.0
+        image: gcr.io/kubeflow-demo-256908/3rdparty/metacontroller/metacontroller:v0.3.0
         imagePullPolicy: Always
         name: metacontroller
         ports:

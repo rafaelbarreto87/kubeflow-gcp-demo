@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: ml-pipeline-ui
-        image: gcr.io/ml-pipeline/frontend:0.1.23
+        image: gcr.io/kubeflow-demo-256908/3rdparty/ml-pipeline/frontend:0.1.23
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000

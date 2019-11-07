@@ -38,7 +38,7 @@ spec:
         - name: AMBASSADOR_SINGLE_NAMESPACE
           value: "false"
         - name: ENGINE_CONTAINER_IMAGE_AND_VERSION
-          value: docker.io/seldonio/engine:0.3.0
+          value: gcr.io/kubeflow-demo-256908/3rdparty/seldonio/engine:0.3.0
         - name: ENGINE_CONTAINER_IMAGE_PULL_POLICY
           value: IfNotPresent
         - name: ENGINE_CONTAINER_SERVICE_ACCOUNT_NAME
@@ -57,7 +57,7 @@ spec:
           value: "true"
         - name: ISTIO_GATEWAY
           value: kubeflow-gateway
-        image: docker.io/seldonio/seldon-core-operator:0.3.1
+        image: gcr.io/kubeflow-demo-256908/3rdparty/seldonio/seldon-core-operator:0.3.1
         imagePullPolicy: Always
         name: manager
         ports:

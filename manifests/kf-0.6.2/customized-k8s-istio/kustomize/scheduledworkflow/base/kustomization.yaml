@@ -10,5 +10,5 @@ resources:
 - role.yaml
 - service-account.yaml
 images:
-- name: gcr.io/ml-pipeline/scheduledworkflow
+- name: gcr.io/kubeflow-demo-256908/3rdparty/ml-pipeline/scheduledworkflow
   newTag: '0.1.23'

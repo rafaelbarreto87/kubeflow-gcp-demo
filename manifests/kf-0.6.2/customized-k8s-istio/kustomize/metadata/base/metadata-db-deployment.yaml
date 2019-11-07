@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: db-container
-        image: mysql:8.0.3
+        image: gcr.io/kubeflow-demo-256908/3rdparty/mysql:8.0.3
         args:
         - --datadir
         - /var/lib/mysql/datadir
